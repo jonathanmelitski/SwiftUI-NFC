@@ -11,6 +11,7 @@
 		677F00D72BA92E37008D36DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677F00D62BA92E37008D36DC /* ContentView.swift */; };
 		677F00D92BA92E39008D36DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 677F00D82BA92E39008D36DC /* Assets.xcassets */; };
 		677F00DC2BA92E39008D36DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 677F00DB2BA92E39008D36DC /* Preview Assets.xcassets */; };
+		677F00E32BA92E64008D36DC /* NFCTagManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 677F00E22BA92E64008D36DC /* NFCTagManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,9 @@
 		677F00D62BA92E37008D36DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		677F00D82BA92E39008D36DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		677F00DB2BA92E39008D36DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		677F00E22BA92E64008D36DC /* NFCTagManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NFCTagManager.swift; sourceTree = "<group>"; };
+		677F00E42BA92E9D008D36DC /* NFCTesting.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NFCTesting.entitlements; sourceTree = "<group>"; };
+		677F00E72BA934D6008D36DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +55,11 @@
 		677F00D32BA92E37008D36DC /* NFCTesting */ = {
 			isa = PBXGroup;
 			children = (
+				677F00E72BA934D6008D36DC /* Info.plist */,
+				677F00E42BA92E9D008D36DC /* NFCTesting.entitlements */,
 				677F00D42BA92E37008D36DC /* NFCTestingApp.swift */,
 				677F00D62BA92E37008D36DC /* ContentView.swift */,
+				677F00E22BA92E64008D36DC /* NFCTagManager.swift */,
 				677F00D82BA92E39008D36DC /* Assets.xcassets */,
 				677F00DA2BA92E39008D36DC /* Preview Content */,
 			);
@@ -139,6 +146,7 @@
 			files = (
 				677F00D72BA92E37008D36DC /* ContentView.swift in Sources */,
 				677F00D52BA92E37008D36DC /* NFCTestingApp.swift in Sources */,
+				677F00E32BA92E64008D36DC /* NFCTagManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +205,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +262,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -269,17 +277,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NFCTesting/NFCTesting.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NFCTesting/Preview Content\"";
 				DEVELOPMENT_TEAM = VU59R57FGM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NFCTesting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -298,17 +309,20 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NFCTesting/NFCTesting.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"NFCTesting/Preview Content\"";
 				DEVELOPMENT_TEAM = VU59R57FGM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = NFCTesting/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
